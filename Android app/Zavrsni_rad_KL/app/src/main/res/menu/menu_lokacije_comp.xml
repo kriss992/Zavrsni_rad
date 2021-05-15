@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Lokacije_comp">
+    <item
+        android:id="@+id/pri2"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/lok"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/lok2"
+        android:orderInCategory="100"
+        android:title="Lokacija"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/pri"
+        android:orderInCategory="100"
+        android:title="@string/prijavak"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/oprog"
+        android:orderInCategory="100"
+        android:title="O programu"
+        app:showAsAction="never" />
+</menu>

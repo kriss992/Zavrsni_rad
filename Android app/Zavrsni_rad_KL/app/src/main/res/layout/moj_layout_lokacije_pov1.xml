@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="@string/_1"
+        android:id="@+id/brojPrikaz1"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:text="New Text"
+        android:id="@+id/datumPrikaz1"
+        android:gravity="center_vertical|center_horizontal"
+        android:typeface="serif"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/brojPrikaz1" />
+</RelativeLayout>

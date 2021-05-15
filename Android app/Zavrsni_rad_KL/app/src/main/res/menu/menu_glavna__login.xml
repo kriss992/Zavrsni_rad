@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Lokacije_Glavna_Activity">
+    <item
+        android:id="@+id/pri2"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/lok2"
+        android:orderInCategory="100"
+        android:title="@string/lokacija"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/pri"
+        android:orderInCategory="100"
+        android:title="@string/prijavak"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/lok"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/postavke"
+        android:orderInCategory="100"
+        android:title="@string/postavke"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/povijest1"
+        android:orderInCategory="100"
+        android:title="Povijest prijava"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/oprog"
+        android:orderInCategory="100"
+        android:title="@string/o_programu"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/odjava1"
+        android:orderInCategory="100"
+        android:title="@string/odjavite_se"
+        app:showAsAction="never" />
+</menu>

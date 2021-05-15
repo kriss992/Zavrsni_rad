@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_naslov"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/et_ip"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:text="Promjena koisničkih podataka:"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:text="IP adresa servera:"
+            android:textSize="18dp" />
+        <ImageButton
+            android:id="@+id/btn_postavi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/et_ip"
+            android:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/stat_notify_sync" />
+        <EditText
+            android:id="@+id/et_ime"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_naslov"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Ime"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/et_prezime"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_ime"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Prezime"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/et_oib"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_prezime"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="OIB"
+            android:inputType="text|number" />
+        <EditText
+            android:id="@+id/et_user1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_oib"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Korisničko ime"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/et_pass1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_user1"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Nova lozinka"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/et_pass2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_pass1"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Ponovno unestie lozinku"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btn_promjene"
+            android:layout_width="220dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_pass2"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="PRIMJENITE PROMJENE" />
+        <Button
+            android:id="@+id/btn_izbrisi"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_promjene"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="IZBRIŠITE KORISNIČKI PROFIL" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

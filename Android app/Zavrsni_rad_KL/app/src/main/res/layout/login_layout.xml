@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_pov"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="klikPov"
+        android:text="Povijest prijava"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Korisničko ime"
+        android:gravity="center"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="Lozinka"
+        android:gravity="center"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_anon"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_prijava"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="klikAnon"
+        android:text="Anonimna prijava" />
+    <Button
+        android:id="@+id/btn_prijava"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_pass"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="klikLogin"
+        android:text="Prijava" />
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="klikReg"
+        android:textSize="12sp"
+        android:text="Registracija" />
+</RelativeLayout>

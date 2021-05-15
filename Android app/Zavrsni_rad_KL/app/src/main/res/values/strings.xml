@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ZAVRŠNI_RAD_K_L</string>
+    <string name="action_settings">Postavke</string>
+    <string name="title_activity_oprog_">Oprog_Activity</string>
+    <string name="title_activity_lokacije__glavna_">Map</string>
+    <string name="title_activity_lokacije__pov_kret_">Lokacije_PovKret_Activity</string>
+    <string name="title_activity_lokacije__pov_">Lokacije_Pov_Activity</string>
+    <string name="title_activity_act__test">Act_Test</string>
+    <string name="IME">Završni rad</string>
+    <string name="title_activity_activity_lokacije_comp">activity_lokacije_comp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="longituda">Longituda:</string>
+    <string name="visina">Visina:</string>
+    <string name="latituda">Latituda:</string>
+    <string name="todo">TODO</string>
+    <string name="Prikazi_spr_lok" />
+    <string name="Lociraj_spremi" />
+    <string name="Spemi_snimljeno" />
+    <string name="Pokazi_spr_rutu" />
+    <string name="Snimaj" />
+    <string name="Prikazi_trenutno" />
+    <string name="Stani" />
+    <string name="Lociraj" />
+    <string name="_1">1</string>
+    <string name="new_button">New Button</string>
+    <string name="title_activity_maps_test">Map</string>
+    <string name="lokacija">Lokacija</string>
+    <string name="prijavak">Prijavak</string>
+    <string name="postavke">Postavke</string>
+    <string name="odjavite_se">Odjavite se</string>
+    <string name="dodajte_lokaciju_prijave">Dodajte lokaciju prijave</string>
+    <string name="o_programu">O programu</string>
+</resources>

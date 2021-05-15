@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_ime"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ime"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_prezime"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_ime"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Prezime"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_oib"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_prezime"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="OIB"
+        android:inputType="text|number" />
+    <EditText
+        android:id="@+id/et_user1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_oib"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Korisničko ime"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_pass1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_user1"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Lozinka"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/et_pass2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_pass1"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ponovno unestie lozinku"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_reg1"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/checkUvjeti"
+        android:layout_alignStart="@+id/et_pass2"
+        android:layout_alignEnd="@+id/checkUvjeti"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="klikReg1"
+        android:text="Registriaj me" />
+    <CheckBox
+        android:id="@+id/checkUvjeti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass2"
+        android:layout_alignStart="@+id/et_pass2"
+        android:layout_marginStart="0dp"
+        android:onClick="dozvolaKlik"
+        android:text="Prihvaćam uvjete korištenja."
+        android:textSize="17sp" />
+</RelativeLayout>

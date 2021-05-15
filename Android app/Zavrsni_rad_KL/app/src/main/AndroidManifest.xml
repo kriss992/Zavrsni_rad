@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ovaj XML dokument sadrži dopuštenja i popis svih aktivnosti aplikacije. Manifest govori koji su
+izvršni elementi aplikacije.-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unin.kl.zavrsni_rad_kl">
+    <!--U linijama ispod se nalaze dozvole za aplikaciju. Aplikacije imaju ograničeni pistup
+    funkcijama uređaja kao što su kamera ili lokacijsku servisi. Ispod dajemo dozvole za upotrebu
+    preciznih i nepreciznih lokacijskih servisa, dozvolu za pristup mreži, dozvolu za čitanje i
+    pisanje u datoteke uređaja itd.-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Linije naredbi ispod zahtjevaju da postoji kamera da bi aplikacija mogla funkcioniati.-->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <!--Ispod se nalaze podaci o aplikaciji kao što je ime i naslov i koja će ikona predstavljati
+    aplikaciju u izborniku uređaja.-->
+    <application
+        android:name=".Varijable"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <!--Naredbe niže definiraju sve klase aktivnosti bez kojih nebi aplikacija prikazivala klasu
+        aktivnosti. Uz deklaraciju same klase imamo i deklaraciju naziva koji će biti prikazan.-->
+        <activity android:name=".PrijavaSpr_Activity"
+            android:label="@string/IME"/>
+        <activity android:name=".PovPrijava_Activity"
+            android:label="@string/IME"/>
+        <activity android:name=".Registracija_Activity"
+            android:label="@string/IME"/>
+        <activity android:name=".Postavke_Activity"
+            android:label="@string/IME"/>
+        <activity android:name=".Login_Activity"
+            android:label="@string/IME"/>
+        <!--Dvije linije naredbi definiraju kriptografski ključ koji nam je poteban da bi se
+        učitavali resusrsi google-a kao što su u ovom slučaju karte. Bez toga nije moguće koristiti
+        te esusrse.-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!--Ispod su deklarirani resurski koji su potrebni za funkcioniranje aplikacije.-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--Kao i prije ovdje deklariramo kalse aktivnosti, natpis i temu tih aktivnosti.-->
+        <activity
+            android:name=".Lokacije_Glavna_Activity"
+            android:label="@string/IME">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Lokacije_PovKret_Activity"
+            android:label="@string/IME"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lokacije_Pov_Activity"
+            android:label="@string/IME"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lokacije_comp"
+            android:label="@string/IME"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Oprog_Activity"
+            android:label="@string/IME"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Prijava_Activity"
+            android:label="@string/IME" />
+        <!--File provider je potreban da bi se moglo imati pristup vanjskoj datoteci u koju se
+        spremaju slike.-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.unin.kl.zavrsni_rad_kl.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>
